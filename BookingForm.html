@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Booking Form</title>
+	<link rel="icon" type="image/png" href="img/logo.ico"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!------forICONS-------->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<style>
+	.navbar-right{
+			margin-right: 50px;
+			font-size: 15px;
+		}
+body
+{
+	background-image: url(img/booking.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-size: 14px;
+}
+h1
+{
+	text-align: center;
+}
+p
+ {
+ 	color: #fff;
+ 	text-align: left;
+ 	margin-left: 30px;
+ 	margin-bottom: 5px;
+ }
+	</style>
+</head>
+<body>
+	
+	<!----NavigationBar---->
+	<section class="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto"> <!-------ml-auto use to shift nav bar toward right------->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"  >TOURS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">TESTIMONIALS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">TEAM MEMBERS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">CONTACT</a>
+      </li>
+    </ul>
+
+    <ul>
+    	<ul class="navbar-nav navbar-right">
+    		<li><a href="#"><span class="fa fa-user"></span> Sign Up</a></li>
+    		<li><a href="#"><span class="fa fa-sign-in"></span> Sign In</a></li>
+    </ul>
+
+  </div>
+</nav>
+	</section>
+
+<!------------FORM------------>
+
+<div id="form">
+	<form class="booking-form">
+		<div>
+			<h1 style="color: #fff;">Tour Booking Form</h1><br>
+		</div>
+		<div class="form-content">
+			<p>Name</p>
+			<input type="text" class="input-mate" placeholder="First Name" required>
+			<input type="text" class="input-mate" placeholder="Last Name"required>
+		</div><br>
+		<div class="form-content">
+			<p>Email</p>
+			<input type="email" class="input-material" placeholder="Email Id"required>
+		</div><br>
+		<div class="form-content">
+			<p>Phone</p>
+			<input type="number" class="input-material" placeholder="Phone no"required>
+		</div><br>
+		<div class="form-content">
+			<p>When are you planning to visit?</p>
+			<input type="date" class="input-material" required>
+		</div><br>
+		<div class="form-content">
+			<p>How many pepole are in your group?</p>
+			<input type="number" class="input-material" required>
+		</div><br>
+		<div class="form-content">
+			<p>Which tours or events are you most intrested in?</p>
+			<input type="text" class="input-material" required>
+		</div><br>
+		<div class="form-content" style="text-align: left; color: #fff;">
+			<p>What is the best way to contact you?</p>
+			<input type="checkbox" id="check"><span class="check-text">Phone</span><br>
+			<input type="checkbox" id="check"><span class="check-text">Email</span><br>
+			<input type="checkbox" id="check"><span class="check-text">Either</span><br>
+		</div><br>
+		<div class="form-content" style="text-align: left;">
+			<p>If phone,when is the best time of day far a call back?</p>
+			<input type="radio" id="rad"><span class="rad-text">08-10 AM</span><br>
+			<input type="radio" id="rad"><span class="rad-text">12-04 PM</span><br>
+			<input type="radio" id="rad"><span class="rad-text">06-10 PM</span><br>
+		</div><br>
+		<div class="form-content" style="text-align: left;">
+			<p>Anything else we should know?</p>
+			<textarea class="area-control" rows="3"></textarea>
+		</div><br>
+		<div class="form-content" style="text-align: left;">
+			<p>And last, how did you hear about us?</p>
+			<textarea class="area-control" rows="3"></textarea>
+		</div><br>
+		<button type="submit" class="btn btn-primary">SEND</button>
+	</form>
+	
+</div>
+</body>
+</html>
